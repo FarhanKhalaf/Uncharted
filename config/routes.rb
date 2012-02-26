@@ -1,5 +1,10 @@
 Uncharted::Application.routes.draw do
+
+  root to: 'pages#home', id: 'index'
+
   devise_for :users
+
+  match "/*id" => "pages#show", as: :page, format: false
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
