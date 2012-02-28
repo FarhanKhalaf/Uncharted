@@ -4,6 +4,13 @@ Uncharted::Application.routes.draw do
 
   devise_for :users
 
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    get "/logout" => "devise/sessions#destroy"
+    get "/sign_up" => "devise/registrations#new"
+    get "/sign_out" => "devise/registrations#destroy"
+  end
+
   match "/*id" => "pages#show", as: :page, format: false
 
   # The priority is based upon order of creation:

@@ -11,3 +11,249 @@
  *= require_self
  *= require_tree .
 */
+
+						#stage {
+			  display: block;
+			  margin: 0;
+			  padding: 0;
+			  margin: 0 auto;
+			  padding-top: 0px;
+			  width: 200px;
+			  height: 43px;
+			  background-color: #383839;
+			  background-repeat: no-repeat;
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(#5c5f62), to(#383839));
+			  background-image: -webkit-linear-gradient(#5c5f62, #383839);
+			  background-image: -moz-linear-gradient(#5c5f62, #383839);
+			  background-image: -o-linear-gradient(top, #5c5f62, #383839);
+			  background-image: -khtml-gradient(linear, left top, left bottom, from(#5c5f62), to(#383839));
+			  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#5c5f62', EndColorStr='#383839', GradientType=0);
+			  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#5c5f62', EndColorStr='#383839', GradientType=0))";
+			}
+			#stage .slider-frame {
+			  position: relative;
+			  display: block;
+			  margin: 5px 0px 0px 230px;
+			  padding: 0;
+			  margin: 5px 0px 0px 10px;
+			  width: 85px;
+			  height: 29px;
+			  background-color: #232323;
+			  background-repeat: no-repeat;
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#404040));
+			  background-image: -webkit-linear-gradient(#2b2b2b, #404040);
+			  background-image: -moz-linear-gradient(#2b2b2b, #404040);
+			  background-image: -o-linear-gradient(top, #2b2b2b, #404040);
+			  background-image: -khtml-gradient(linear, left top, left bottom, from(#2b2b2b), to(#404040));
+			  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#2b2b2b', EndColorStr='#404040', GradientType=0);
+			  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2b2b2b', EndColorStr='#404040', GradientType=0))";
+			  border-top: 1px solid #333333;
+			  border-right: 1px solid #333333;
+			  border-bottom: 1px solid #666666;
+			  border-left: 1px solid #333333;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px;
+			  -webkit-box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+			  -moz-box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+			  box-shadow: inset 0px 1px 8px 0 rgba(0, 0, 0, 0.25);
+			  float: right;
+			  margin-right: 86px;
+			}
+			#stage .slider-frame .slider-button {
+			  display: block;
+			  margin: 0;
+			  padding: 0;
+			  width: 43px;
+			  height: 27px;
+			  line-height: 27px;
+			  background: #d37a16;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px;
+			  border: 1px solid #70430e;
+			  -webkit-transition: all 0.25s ease-in-out;
+			  -moz-transition: all 0.25s ease-in-out;
+			  transition: all 0.25s ease-in-out;
+			  color: #fff;
+			  font-family:Helvetica;
+			  font-size:11px;
+			  font-weight: bold;
+			  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+			  text-align: center;
+			  cursor: pointer;
+			}
+			#stage .slider-frame .slider-button.on {
+			  margin-left: 40px;
+			  background: #2372c6;
+			  border: 1px solid #0f3f74;
+			}
+			#stage .slider-frame .slider-button:before {
+			  position: absolute;
+			  display: block;
+			  margin: 0;
+			  padding: 0;
+			  width: 43px;
+			  height: 12px;
+			  background: rgba(255, 255, 255, 0.25);
+			  content: '';
+			  -moz-border-radius: 15px;
+			  border-radius: 15px;
+			}
+			
+				@font-face {
+		    font-family: 'HelveticaLight';
+		    src: url('fonts/helveticaneuelight.eot');
+		    src: url('fonts/helveticaneuelight.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/helveticaneuelight.woff') format('woff'),
+		         url('fonts/helveticaneuelight.ttf') format('truetype'),
+		         url('fonts/helveticaneuelight.svg#helveticaneuelight') format('svg');
+		    font-weight: lighter;
+		    font-style: normal;
+		}
+				@font-face {
+		    font-family: 'HelveticaThEx';
+		    src: url('fonts/helveticaneueltstd-thex.eot');
+		    src: url('fonts/helveticaneueltstd-thex.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/helveticaneueltstd-thex.woff') format('woff'),
+		         url('fonts/helveticaneueltstd-thex.ttf') format('truetype'),
+		         url('fonts/helveticaneueltstd-thex.svg#helveticaneueltstd-thex') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+					
+		
+			body {
+				background-image: url('bg.png');
+				background-repeat: repeat-x:
+				background-color: #ebe5dc;
+				margin: 0px;
+				font-family: HelveticaLight, "Helvetica Neue", "Helvetica", "myriad", "arial";
+			}
+			a:link, a:hover, a:visited {
+				text-decoration: none;
+			}
+			.header {
+				width: 100%;
+				height: 54px;
+				background-image: url('bg-head.png');
+				background-repeat: repeat-x;
+			}
+			.header-wrap {
+				width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.logo {
+				width: 362px;
+				height: 47px;
+				background-image: url('logo.png');
+				margin-left: -125px;
+				float: left;
+			}
+			.auto-play {
+				background-image: url('auto-play.png');
+				width: 362px;
+				height: 47px;
+				float: right;
+				margin-right: -15px;
+				padding-top: 5px;
+			}
+			.wrapper {
+				width: 1000px;
+				background-repeat: no-repeat;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.controls {
+				background-image:url('control-bg.png');
+				width: 935px;
+				height: 17px;
+				margin: 20px 0px 20px 0px;
+				padding: 15px 5px;
+			}
+			.last {
+				margin-left: 5px;
+				margin-right: 5px;
+				box-shadow: 0px 1px 3px gray;
+				float: left;
+				opacity: 0.7;
+
+			}
+			.next {
+				margin-left: 5px;
+				margin-right: 5px;
+				box-shadow: 0px 1px 3px gray;
+				float: left;
+				opacity: 0.7;
+				
+			}
+			.play {
+				margin-left: 5px;
+				margin-right: 5px;
+				box-shadow: 0px 1px 3px gray;
+				float: left;
+				opacity: 0.7;
+			}
+			.volume {
+				margin-left: 10px;
+				margin-right: 5px;
+				vertical-align: sub;
+				float: left;
+
+			}
+			.song-info {
+				width: 328px;
+				height: 28px;
+				background-image: url('song.png');
+				float: left;
+				margin-top: -5px;
+				margin-left: 10px;
+				padding-top: 3px;
+	
+			}
+			.song-info span {
+				color: #A5a095;
+				font-size: 11px;
+				padding-top: 7px;
+				margin-left: 23px;
+			}
+			.content {
+				background-image: url('content-bg.png');
+				width: 944px;
+				height: 717px;
+			}
+			#control {
+				opacity: 0.7;
+			}
+			.hover {
+				opacity: 1;
+				
+			}
+			.content-left {
+				width: 180px;
+				height: 677px;
+				padding: 20px 10px;
+			}
+			.content-left h2 {
+				font-size: 19.7px;
+				color: black;
+				text-shadow: 0px 1px 1px #232323;
+				font-weight: lighter;
+				font-family: 'HelveticaThEx';
+				text-align: right;
+				margin-top: 20px;
+			}
+			.cat a:link {
+				color: black;
+			}
+			.content-left p {
+			font-size: 15px;
+			color: #d1ba9b;
+			text-shadow: 0px 1px 1px white, 0px -1px 0px rgba(0,0,0,0.05);	
+			font-family: 'HelveticaThEx';
+			text-align: right;
+			line-height: 1.75em;
+			}
+			.inset a:link {
+				margin: 0px 5px;
+				color: #A5a095;
+			}

@@ -1,14 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Uncharted</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Uncharted</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+    <%= render 'layouts/header' %>
 
-</body>
+		<div class="wrapper">
+			<div class="controls">
+        <%= image_tag('last.png', class: 'last', size: '24x18', alt: 'last') %>
+        <%= image_tag('play.png', class: 'play', size: '24x18', alt: 'play') %>
+        <%= image_tag('next.png', class: 'next', size: '24x18', alt: 'next') %>
+        <%= image_tag('volume.png', class: 'volume', size: '88x22', alt: 'volume') %>
+				<div class="song-info">
+					<span>Song Info Here</span>
+				</div>
+			</div>
+
+			<div class="content">
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+        <%= yield %>
+
+			</div>
+		</div>
+	</body>
 </html>
